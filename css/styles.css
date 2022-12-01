@@ -537,21 +537,24 @@ background-color: #F5F4FA;
 /* link-card */
 .link-card:hover, 
 .link-card:focus {
+    overflow: 0;
     display: block;
     
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
-
+    
 }
 
+.portfolio-tumb:hover {
 
+}
 
 /* portfolio-tumb */
 .portfolio-tumb {
     position: relative;
-    
+     overflow: hidden; 
 }
 .portfolio-tumb-txt {
     position: absolute;
@@ -564,20 +567,23 @@ background-color: #F5F4FA;
     padding: 44px 24px 82px 24px;
     background: rgba(33, 150, 243, 0.9);
 
+    opacity: 0; 
+    transform: translateY(100%) 
+    
+}
+.portfolio-tumb-txt> p {
     font-size: 18px;
     line-height: 1.555;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-
-    opacity: 0; 
-    transform: translateY(100%)  
 }
-.portfolio-tumb-txt:hover {
+    
+.portfolio-tumb-txt:hover,
+.portfolio-tumb-txt:focus {
     opacity: 1;
     transform: translateY(0%)
-    
-    
 }
+
 
 
 
